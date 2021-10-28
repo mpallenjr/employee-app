@@ -13,4 +13,9 @@ class EmployeesController < ApplicationController
     all_employees = Employee.all 
     render json: all_employees.as_json 
   end
+
+  def show
+    employee = Employee.find_by(id: params[:id])
+    render json: employee.as_json
+  end
 end
