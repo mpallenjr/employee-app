@@ -1,4 +1,4 @@
-### Create Action
+### Create Action Employee
 POST http://localhost:3000/employees.json 
 Content-Type: application/json
 
@@ -8,16 +8,16 @@ Content-Type: application/json
 "department_id": "1"
 }
 
-### INDEX Action
+### INDEX Action Employee
 GET http://localhost:3000/employees.json
 
-### SHOW Action
+### SHOW Action Employee
 GET http://localhost:3000/employees/3.json
 
-### DESTROY Action
+### DESTROY Action Employee
 DELETE http://localhost:3000/employees/2.json
 
-### UPDATE Action
+### UPDATE Action Employee
 PATCH http://localhost:3000/employees/3.json 
 Content-Type: application/json 
 
@@ -25,4 +25,34 @@ Content-Type: application/json
   "first_name": "Patrick",
   "last_name": "Pissed now",
   "department_id": "1"
+}
+
+
+### Create Action Department
+POST http://localhost:3000/departments.json 
+Content-Type: application/json
+
+{
+"name": "Sales",
+"manager": "Patrick Pissed Now",
+"department_code": "c1"
+}
+
+### INDEX Action Department
+GET http://localhost:3000/departments.json
+
+### SHOW Action Department
+GET http://localhost:3000/departments/2.json
+
+### DESTROY Action Department
+DELETE http://localhost:3000/departments/1.json
+
+### UPDATE Action Department
+PATCH http://localhost:3000/departments/2.json 
+Content-Type: application/json 
+
+{
+  "name": "Sales",
+  "manager": "Kevin",
+  "department_code": "c1"
 }
