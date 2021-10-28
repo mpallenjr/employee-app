@@ -12,7 +12,17 @@ Content-Type: application/json
 GET http://localhost:3000/employees.json
 
 ### SHOW Action
-GET http://localhost:3000/employees/2.json
+GET http://localhost:3000/employees/3.json
 
 ### DESTROY Action
 DELETE http://localhost:3000/employees/2.json
+
+### UPDATE Action
+PATCH http://localhost:3000/employees/3.json 
+Content-Type: application/json 
+
+{
+  "first_name": "Patrick",
+  "last_name": "Pissed now",
+  "department_id": "1"
+}
