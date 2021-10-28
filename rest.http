@@ -1,0 +1,9 @@
+### Create Action
+POST http://localhost:3000/employees.json 
+Content-Type: application/json
+
+{
+"first_name": "Mike",
+"last_name": "Allen",
+"department_id": "1"
+}
