@@ -7,3 +7,6 @@ Content-Type: application/json
 "last_name": "Allen",
 "department_id": "1"
 }
+
+### INDEX Action
+GET http://localhost:3000/employees.json

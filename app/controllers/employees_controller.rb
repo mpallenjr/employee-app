@@ -8,4 +8,9 @@ class EmployeesController < ApplicationController
     employee.save
     render json: employee.as_json
   end
+
+  def index
+    all_employees = Employee.all 
+    render json: all_employees.as_json 
+  end
 end
