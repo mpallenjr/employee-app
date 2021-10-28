@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   post "/employees" => "employees#create"
   get "/employees" => "employees#index"
   get "/employees/:id" => "employees#show"
+  delete "employees/:id" => "employees#destroy"
 end

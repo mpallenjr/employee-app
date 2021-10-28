@@ -18,4 +18,9 @@ class EmployeesController < ApplicationController
     employee = Employee.find_by(id: params[:id])
     render json: employee.as_json
   end
+
+  def destroy
+    employee = Employee.find(params[:id])
+    employee.destroy
+  end
 end

@@ -3,8 +3,8 @@ POST http://localhost:3000/employees.json
 Content-Type: application/json
 
 {
-"first_name": "Mike",
-"last_name": "Allen",
+"first_name": "Dean",
+"last_name": "Asshole",
 "department_id": "1"
 }
 
@@ -12,5 +12,7 @@ Content-Type: application/json
 GET http://localhost:3000/employees.json
 
 ### SHOW Action
-GET http://localhost:3000/employees/1.json
+GET http://localhost:3000/employees/2.json
 
+### DESTROY Action
+DELETE http://localhost:3000/employees/2.json
